@@ -1,35 +1,136 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<meta viewport="width=device-width, initial-scale=1.0">
-<title>แฟมสะสมงานของฉัน  </title>
-<style>
-body { font-family: sans-serif; background-color: #f4f7f6; text-align: center;
-padding: 30px; }
-.container { max-width: 800px; margin: 0 auto; }
-.project-card { background: white; padding: 20px; margin: 20px 0; border-radius:
-8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: left; }
-.btn { display: inline-block; background: #2c3e50; color: white; padding: 10px
-20px; text-decoration: none; border-radius: 5px; margin-top: 20px; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แฟ้มสะสมงานของฉัน - Pacharapol</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Prompt', sans-serif;
+            background-color: #f4f7f6;
+            color: #333333;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666666;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .project-card {
+            background: #ffffff;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 5px solid #2c3e50;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card h3 {
+            color: #2c3e50;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            color: #555555;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /* ปุ่มสำหรับกดเข้าไปดูรายละเอียดผลงาน */
+        .view-btn {
+            display: inline-block;
+            padding: 8px 18px;
+            background-color: #3498db;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+        }
+
+        .view-btn:hover {
+            background-color: #2980b9;
+        }
+
+        /* ปุ่มกลับหน้าแรก */
+        .btn-back {
+            display: inline-block;
+            background: #2c3e50;
+            color: #ffffff;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            margin-top: 25px;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(44, 62, 80, 0.2);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn-back:hover {
+            background-color: #1a252f;
+            transform: scale(1.03);
+        }
+    </style>
 </head>
 <body>
-<div class="container">
-<h1> แฟ้มสะสมงาน  (Portfolio)</h1>
-<p>นี่คือพื้นที่รวบรวมผลงานและกิจกรรมที่ภูมิใจครับ</p>
-<!-- กล่องผลงานชิ้นที่ 1 -->
-<div class="project-card">
-<h3>1. โครงงาน/ชิ้นงานวิทยาศาสตร์ </h3>
-<p>รายละเอียดชิ้นงาน : เขียนอธิบายสันๆ ว่าทำอะไร ได้เรียนรู้อะไรจากงานนี้บ้าง  </p>
-</div>
-<!-- กล่องผลงานชิ้นที่ 2 -->
-<div class="project-card">
-<h3>2. กิจกรรม/เกียรติบัตรที่ได้รับ</h3>
-<p>รายละเอียดชิ้นงาน : เข้าร่วมการประกวด หรือกิจกรรมของโรงเรียน...</p>
-</div>
-<!-- ปุ่มกดกลับหน้าแรก -->
-<a href="index.html" class="btn"> กลับหน้าแรก</a>
-</div>
+
+    <div class="container">
+        <h1>📂 แฟ้มสะสมงาน (Portfolio)</h1>
+        <p class="subtitle">นี่คือพื้นที่รวบรวมผลงานและกิจกรรมที่ภูมิใจครับ</p>
+
+        <div class="project-card">
+            <h3>1. โครงงาน/ชิ้นงานวิทยาศาสตร์</h3>
+            <p>เขียนอธิบายสั้นๆ ว่าทำอะไร ได้เรียนรู้อะไรจากงานนี้บ้าง เช่น การพัฒนาแบบจำลองทางวิศวกรรม หรือการทดลองต่าง ๆ</p>
+            <a href="https://github.com" target="_blank" class="view-btn">🔗 คลิกเพื่อดูผลงาน</a>
+        </div>
+
+        <div class="project-card">
+            <h3>2. กิจกรรม/เกียรติบัตรที่ได้รับ</h3>
+            <p>รายละเอียดกิจกรรม เช่น เข้าร่วมการประกวด หรือกิจกรรมของโรงเรียน และทักษะที่ได้รับจากการเข้าร่วม</p>
+            <a href="https://github.com" target="_blank" class="view-btn">🖼️ คลิกเพื่อดูเกียรติบัตร</a>
+        </div>
+
+        <a href="index.html" class="btn-back">⬅️ กลับหน้าแรก</a>
+    </div>
+
 </body>
 </html>
