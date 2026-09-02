@@ -38,6 +38,7 @@
 
         .header p {
             color: #666;
+            font-size: 16px;
         }
 
         .card {
@@ -45,12 +46,19 @@
             padding: 25px;
             margin-bottom: 20px;
             border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
         }
 
         .card h2 {
             color: #3498db;
             margin-bottom: 10px;
+            font-size: 22px;
         }
 
         .card p {
@@ -66,6 +74,7 @@
             color: white;
             text-decoration: none;
             border-radius: 25px;
+            transition: 0.3s;
         }
 
         .button:hover {
@@ -81,6 +90,13 @@
 
         .back:hover {
             background: #1a252f;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #888;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -118,9 +134,14 @@
             </p>
         </div>
 
-        <a href="index.html" class="button back">
+        <!-- ปุ่มกลับหน้าแรก -->
+        <a href="./index.html" class="button back">
             🏠 กลับหน้าแรก
         </a>
+
+        <footer>
+            © 2026 Pacharapol Portfolio
+        </footer>
 
     </div>
 
