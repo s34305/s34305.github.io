@@ -1,34 +1,91 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<title>หน้าแนะนำตัวของฉัน</title>
-<style>
-body {
-background-color: #D3D3D3; LightGray: #333;
-text-align: center; padding: 50px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าแนะนำตัวของฉัน - พชรพล</title>
+    
+    <!-- โหลดฟอนต์ Prompt จาก Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
 
-}
-.card {
-background: MistyRose; border-radius: 50px;
-box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-max-width: 500px; margin: 0 auto; padding: 30px;
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-}
-h1 { color: #B03060; }
-p { font-size: 18px; line-height: 1.6; }
-</style>
+        body {
+            font-family: 'Prompt', sans-serif;
+            background-color: #f4f4f9;
+            color: #333333;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            background-color: #ffe4e1; /* MistyRose */
+            border-radius: 24px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            max-width: 500px;
+            width: 100%;
+            padding: 40px 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        h1 {
+            color: #B03060;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        /* สไตล์ปุ่มกด */
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 28px;
+            background-color: #B03060;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 16px;
+            box-shadow: 0 4px 12px rgba(176, 48, 96, 0.25);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #8b224c;
+            transform: scale(1.03);
+        }
+    </style>
 </head>
 <body>
-<div class="card">
-<h1>ยินดีต้อนรับสู่โปรไฟล์ของฉัน  🤘 </h1>
-<p>สวัสดีครับ! ผมชื่อ <strong>พชรพล สันจะโป๊ะ (Pacharapol sanjapo)</strong></p>
-<p>ขณะนี้กำลังศึกษา/สนใจด้าน Industrial Engineering</p>
-<p>นี่คือเว็บไซต์แรกของผมที่โฮสต์บน GitHub Pages!</p>
-</div>
-</body>
-</html>
-<a href="portforlio.html" class="btn"> ดูแฟ้มผลงานของฉัน</a>
-</div>
+
+    <div class="card">
+        <h1>ยินดีต้อนรับสู่โปรไฟล์ของฉัน 🤘</h1>
+        <p>สวัสดีครับ! ผมชื่อ <strong>พชรพล สันจะโป๊ะ (Pacharapol Sanjapo)</strong></p>
+        <p>ขณะนี้กำลังศึกษา / สนใจด้าน <strong>Industrial Engineering</strong></p>
+        <p>นี่คือเว็บไซต์แรกของผมที่โฮสต์บน GitHub Pages!</p>
+
+        <a href="portfolio.html" class="btn">ดูแฟ้มผลงานของฉัน</a>
+    </div>
+
 </body>
 </html>
