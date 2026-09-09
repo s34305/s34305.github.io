@@ -718,24 +718,3 @@ footer {
         height: 200px;
     }
 }
-
-/* === งานอดิเรก === */
-.hobbies-list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.hobby-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #d8f3dc;
-    font-size: 14px;
-}
-
-.hobby-item i {
-    color: #74c69d;
-    width: 18px;
-    text-align: center;
-}
