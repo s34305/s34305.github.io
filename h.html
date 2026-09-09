@@ -1,1 +1,286 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประวัติส่วนตัว - สมชาย ใจดี</title>
+    
+    <!-- นำเข้าฟอนต์ Google Font (Prompt) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- นำเข้า ไอคอน Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* === Global Settings === */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Prompt', sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f4;
+            color: #2d3748;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* === Container Layout === */
+        .resume-container {
+            max-width: 950px;
+            margin: 20px auto;
+            background: #ffffff;
+            display: flex;
+            flex-wrap: wrap;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        /* === Sidebar (ฝั่งซ้าย - โทนเขียวเข้ม) === */
+        .sidebar {
+            flex: 1 1 300px;
+            background-color: #1b4332;
+            color: #ffffff;
+            padding: 40px 30px;
+        }
+
+        .profile-img-container {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #52b788;
+        }
+
+        .sidebar h1 {
+            font-size: 22px;
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+
+        .sidebar .job-title {
+            font-size: 14px;
+            color: #b7e4c7;
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .sidebar-section {
+            margin-bottom: 30px;
+        }
+
+        .sidebar-title {
+            font-size: 16px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #52b788;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            color: #74c69d;
+            letter-spacing: 1px;
+        }
+
+        .contact-info p {
+            font-size: 14px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            color: #d8f3dc;
+        }
+
+        .contact-info i {
+            margin-right: 12px;
+            color: #74c69d;
+            width: 16px;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-badge {
+            background-color: #2d6a4f;
+            color: #e8f5e9;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+
+        /* === Main Content (ฝั่งขวา - โทนขาวสว่าง Accent เขียว) === */
+        .main-content {
+            flex: 2 1 500px;
+            padding: 40px 35px;
+            background: #ffffff;
+        }
+
+        .main-section {
+            margin-bottom: 35px;
+        }
+
+        .main-title {
+            font-size: 20px;
+            color: #1b4332;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .main-title i {
+            margin-right: 10px;
+            color: #2d6a4f;
+        }
+
+        .about-text {
+            color: #4a5568;
+            font-size: 14px;
+            text-align: justify;
+        }
+
+        /* Timeline Items (สำหรับประวัติการศึกษา) */
+        .timeline-item {
+            position: relative;
+            padding-left: 20px;
+            border-left: 2px solid #d8f3dc;
+            margin-bottom: 20px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #2d6a4f;
+        }
+
+        .timeline-item h4 {
+            font-size: 16px;
+            color: #1b4332;
+        }
+
+        .timeline-item .sub-title {
+            font-size: 13px;
+            color: #2d6a4f;
+            font-weight: 500;
+        }
+
+        .timeline-item .date {
+            font-size: 12px;
+            color: #718096;
+            margin-bottom: 5px;
+        }
+
+        .timeline-item p {
+            font-size: 13.5px;
+            color: #4a5568;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .main-content {
+                padding: 25px 20px;
+            }
+            .sidebar {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-container">
+        
+        <!-- ================= ฝั่งซ้าย (Sidebar) ================= -->
+        <aside class="sidebar">
+            <div class="profile-img-container">
+                <img src="https://via.placeholder.com/150" alt="รูปโปรไฟล์" class="profile-img">
+            </div>
+            
+            <h1>สมชาย ใจดี</h1>
+            <p class="job-title">นักศึกษาจบใหม่ / พัฒนาเว็บไซต์</p>
+
+            <!-- ข้อมูลติดต่อ -->
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">การติดต่อ</h3>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> 081-234-5678</p>
+                    <p><i class="fas fa-envelope"></i> somchai@email.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> กรุงเทพมหานคร, ประเทศไทย</p>
+                    <p><i class="fab fa-github"></i> github.com/somchai</p>
+                    <p><i class="fab fa-linkedin"></i> linkedin.com/in/somchai</p>
+                </div>
+            </div>
+
+            <!-- ทักษะ -->
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">ทักษะความสามารถ</h3>
+                <div class="skills-list">
+                    <span class="skill-badge">HTML5</span>
+                    <span class="skill-badge">CSS3</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">React.js</span>
+                    <span class="skill-badge">Node.js</span>
+                    <span class="skill-badge">Git</span>
+                    <span class="skill-badge">Responsive Design</span>
+                    <span class="skill-badge">UI/UX Basic</span>
+                </div>
+            </div>
+
+            <!-- ภาษา -->
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">ภาษา</h3>
+                <div class="contact-info">
+                    <p><i class="fas fa-language"></i> ไทย (ภาษาแม่)</p>
+                    <p><i class="fas fa-language"></i> อังกฤษ (ระดับใช้งานได้)</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- ================= ฝั่งขวา (Main Content) ================= -->
+        <main class="main-content">
+            
+            <!-- เกี่ยวกับฉัน -->
+            <section class="main-section">
+                <h2 class="main-title"><i class="fas fa-user-circle"></i> เกี่ยวกับฉัน</h2>
+                <p class="about-text">
+                    ผมมีความสนใจในการสร้างสรรค์เว็บไซต์และเว็บแอปพลิเคชันที่ใช้งานง่าย มีประสิทธิภาพ และสวยงาม มีความกระตือรือร้นในการเรียนรู้เทคโนโลยีใหม่ๆ พร้อมที่จะทำงานร่วมกับทีมเพื่อพัฒนาตนเองและสร้างสรรค์ผลงานที่มีคุณภาพ
+                </p>
+            </section>
+
+            <!-- ประวัติการศึกษา -->
+            <section class="main-section">
+                <h2 class="main-title"><i class="fas fa-graduation-cap"></i> ประวัติการศึกษา</h2>
+                
+                <div class="timeline-item">
+                    <h4>ปริญญาตรี วิทยาศาสตรบัณฑิต (วิทยาการคอมพิวเตอร์)</h4>
+                    <div class="sub-title">มหาวิทยาลัยเทคโนโลยีดีเด่น</div>
+                    <div class="date">2020 - 2024</div>
+                    <p>เกรดเฉลี่ยสะสม: 3.50 (เกียรตินิยมอันดับสอง)</p>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
 
